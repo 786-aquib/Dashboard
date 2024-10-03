@@ -10,6 +10,9 @@ import SwipeRightAltIcon from '@mui/icons-material/SwipeRightAlt';
 import CheckBoxIcon from '@mui/icons-material/CheckBox';
 import ProgressBar from './ProgressBar';
 import AttendanceChart from './AttendanceChart';
+import Chart from 'chart.js/auto';
+
+
 
 
 

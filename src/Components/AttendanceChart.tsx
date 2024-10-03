@@ -27,13 +27,13 @@ const AttendanceChart: React.FC<AttendanceChartProps> = ({ onTime, workFromHome,
   };
 
   return (
-    <div style={{ width: 180, height: 180, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div style={{ width: 160, height: 160, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Doughnut
         data={data}
         options={{
           responsive: true,
           maintainAspectRatio: false,
-          cutout: '70%', // Adjust the thickness by changing this percentage
+          cutout: '80%', // Adjust the thickness by changing this percentage
           plugins: {
             legend: {
               display: false,
