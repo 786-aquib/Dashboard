@@ -155,7 +155,7 @@ function ThreeCardSection() {
                                 <HistoryToggleOffIcon fontSize='large' color='success' />
                                 <Typography sx={{ marginTop: 1 }} fontSize="0.85rem" fontFamily="monospace">Average hours</Typography>
                                 <Typography sx={{ marginTop: 1 }} fontSize="1.3rem" fontFamily="monospace" fontWeight="bold">
-                                    {myData.summary?.averageHours}
+                                    {myData.summary?.averageHours} hours
                                 </Typography>
                             </CardContent>
                         </Card>
