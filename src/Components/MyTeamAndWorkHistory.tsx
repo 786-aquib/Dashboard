@@ -62,12 +62,27 @@ function MyteamAndWorkHistory() {
                                                         <span style={{ fontWeight: 'bold' }}>{teammate.employeeName}</span>
                                                     </td>
                                                     {teammate.attendanceRecords.map((record, idx) => (
-                                                        <td key={idx} style={{ padding: '12px', borderBottom: '1px solid #ddd', textAlign: 'center' }}>
-                                                            {record.workMode === "Remote" && <span style={{fontFamily:'inherit'}}><div style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: 'blue', display: 'inline-block', marginRight: 4, fontFamily:'inherit' }} />{record.arrivalTime}</span>}
-                                                            {record.workMode === "Absent" && <span style={{fontFamily:'inherit'}}><div style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: 'red', display: 'inline-block', marginRight: 4 , fontFamily:'inherit'}} />Absent</span>}
-                                                            {record.workMode === "In Office" && <span style={{fontFamily:'inherit'}}><div style={{ width: 8, height: 8, borderRadius: '50%', backgroundColor: 'green', display: 'inline-block', marginRight: 4, fontFamily:'inherit' }} />{record.arrivalTime}</span>}
-                                                        </td>
-                                                    ))}
+    <td key={idx} style={{ padding: '12px', borderBottom: '1px solid #ddd', textAlign: 'center' }}>
+        <span style={{ fontFamily: 'inherit' }}>
+            <div
+                style={{
+                    width: 8,
+                    height: 8,
+                    borderRadius: '50%',
+                    backgroundColor:
+                        record.workMode === "Remote" ? 'blue' :
+                        record.workMode === "Absent" ? 'red' :
+                        record.workMode === "In Office" ? 'green' :
+                        'gray', // Default color for unknown workMode
+                    display: 'inline-block',
+                    marginRight: 4
+                }}
+            />
+            {record.arrivalTime ? record.arrivalTime : 'N/A'}
+        </span>
+    </td>
+))}
+
                                                 </tr>
                                             );
                                         })}

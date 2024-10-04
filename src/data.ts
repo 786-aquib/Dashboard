@@ -83,10 +83,10 @@ export const employeeData: Employee[] = [
                     },
                     {
                         date: "2024-09-24",
-                        day: "Tuesday",
-                        workMode: "Holiday",
-                        arrivalTime: "11:11 AM",
-                        leavingTime: "07:00 PM",
+                        day: "Monday",
+                        workMode: "In Office",
+                        arrivalTime: "10:35 AM",
+                        leavingTime: "06:00 PM",
                         effectiveTime: 8
                     },
                     {
@@ -124,12 +124,12 @@ export const employeeData: Employee[] = [
                         date: "2024-09-25",
                         day: "Wednesday",
                         workMode: "Absent",
-                        arrivalTime: "10:10 AM",
-                        leavingTime: "07:00 PM",
+                        arrivalTime: "Absent",
+                        leavingTime: "Absent",
                         effectiveTime: 0 
                     }
                 ],
-                isAttendanceMarked: false,
+                isAttendanceMarked: true,
             },
             {
                 employeeId: 4,
