@@ -33,7 +33,7 @@ const Donut: React.FC<DonutProps> = ({ values, bgColor, lineWidth, height, width
                 />
             ))}
         </div>
-    );
+    );   
 };
 
 export default Donut;

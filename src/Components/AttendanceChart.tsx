@@ -6,10 +6,10 @@ import 'chart.js/auto';
 Chart.register(...registerables);
 
 interface AttendanceChartProps {
-  onTime: number;
-  workFromHome: number;
-  lateAttendance: number;
-  absent: number;
+  onTime: any;
+  workFromHome: any;
+  lateAttendance: any;
+  absent: any;
 }
 
 const AttendanceChart: React.FC<AttendanceChartProps> = ({ onTime, workFromHome, lateAttendance, absent }) => {
@@ -33,7 +33,7 @@ const AttendanceChart: React.FC<AttendanceChartProps> = ({ onTime, workFromHome,
         options={{
           responsive: true,
           maintainAspectRatio: false,
-          cutout: '80%', // Adjust the thickness by changing this percentage
+          cutout: '80%',
           plugins: {
             legend: {
               display: false,
@@ -42,8 +42,8 @@ const AttendanceChart: React.FC<AttendanceChartProps> = ({ onTime, workFromHome,
               callbacks: {
                 label: (tooltipItem) => {
                   const label = tooltipItem.label || '';
-                  const value = tooltipItem.raw as number || 0; // Explicitly cast to number
-                  const percentage = ((value / total) * 100).toFixed(2); // Ensure total is a number
+                  const value = tooltipItem.raw as number || 0; 
+                  const percentage = ((value / total) * 100).toFixed(2); 
                   return `${label}: ${value} (${percentage}%)`;
                 },
               },

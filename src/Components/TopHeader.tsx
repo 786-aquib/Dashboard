@@ -10,22 +10,22 @@ function TopHeader() {
     return (
         <Box sx={{ padding: 2, backgroundColor: 'white', boxShadow: '0 1px 1px rgba(0,0,0,0.2)' }}>
             <Grid container justifyContent="space-between" alignItems="center">
-                {/* Left Section */}
+               
                 <Grid item>
                     <LeftHeader />
                 </Grid>
 
-                {/* Right Section */}
+                
                 <Grid item>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '30px', marginRight: 2 }}>
                         <TextField
                             sx={{
                                 "& .MuiOutlinedInput-root": {
-                                    borderRadius: 2, // Apply border radius to the input
-                                    backgroundColor: 'whitesmoke', // Change background color
+                                    borderRadius: 2, 
+                                    backgroundColor: 'whitesmoke',
                                 },
                                 "& .MuiOutlinedInput-input": {
-                                    padding: '6px 10px', // Adjust padding
+                                    padding: '6px 10px', 
                                 },
                             }}
                             color='primary'

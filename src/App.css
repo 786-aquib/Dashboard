@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-container {
+    background-color: whitesmoke;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-container {
+    display: flex;
+    flex: 1;
+    margin: 0 10px;
+    flex-direction: row;
+}
+
+.left-header {
+    flex: 0 0 200px; /* Fixed width for larger screens */
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.my-team-section {
+    margin-top: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .left-header {
+        flex: 0 0 150px; /* Adjust width for smaller screens */
+    }
+
+    .main-content {
+        margin: 0 5px; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .left-header {
+        flex: 0 0 120px; /* Further adjust width */
+    }
+
+    .main-content {
+        margin: 0 2px; /* Further adjust margins */
+    }
+
+    .main-content-wrapper {
+        margin-top: 10px; /* Reduce spacing for mobile */
+    }
+
+    .my-team-section {
+        margin-top: 10px; /* Reduce spacing for mobile */
+    }
+}

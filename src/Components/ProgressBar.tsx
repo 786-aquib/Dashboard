@@ -14,7 +14,7 @@ const ProgressBar: React.FC<ProgressProps> = ({ value }) => {
         text={`${value}%`}
         styles={buildStyles({
           textColor: '#000',
-          pathColor: '#FFD700', // You can change the color as per your design
+          pathColor: '#FFD700', 
           trailColor: '#d6d6d6',
         })}
       />

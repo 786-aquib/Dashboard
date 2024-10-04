@@ -3,7 +3,6 @@ import { Box, Typography, Grid } from '@mui/material';
 import AccessTimeSharpIcon from '@mui/icons-material/AccessTimeSharp';
 
 function UsernameSection() {
-    // Get the current date and time
     const currentDate = new Date();
     const formattedDate = currentDate.toLocaleDateString();
     const formattedTime = currentDate.toLocaleTimeString();
@@ -11,7 +10,6 @@ function UsernameSection() {
     return (
         <Box sx={{ padding: 2, width: '100%', display: 'flex', flexDirection: 'column' }}>
             <Grid container spacing={2} sx={{ width: '100%' }}>
-                {/* Left Section */}
                 <Grid item xs={12} md={6}>
                     <Box sx={{ width: '100%' }}>
                         <Typography variant="h5" fontWeight='bold'>Good afternoon, Aquib!</Typography>
@@ -21,7 +19,6 @@ function UsernameSection() {
                     </Box>
                 </Grid>
 
-                {/* Right Section - Current Time */}
                 <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                     <Box 
                         sx={{
@@ -33,7 +30,7 @@ function UsernameSection() {
                             borderRadius: 2,
                             padding: 1,
                             marginRight: 2,
-                            width: 'max-content', // Allow it to shrink to content
+                            width: 'max-content',
                         }}
                     >   
                         <Typography variant="body2" sx={{ marginBottom: 0.5 }}>

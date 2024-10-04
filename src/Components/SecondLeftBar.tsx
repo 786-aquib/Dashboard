@@ -15,12 +15,12 @@ function SecondLeftHeader() {
                 backgroundColor: 'white',
                 padding: 10,
                 boxShadow: '0 1px 1px rgba(0,0,0,0.2)',
-                width: 'max-content', // Adjusts width to fit content
-                height: '100vh', // Full height of the viewport
-                display: 'flex', // Use flexbox
-                flexDirection: 'column', // Stack items vertically
-                justifyContent: 'space-between', // Space out items
-                overflow: 'hidden', // Prevent scroll
+                width: 'max-content', 
+                height: '100vh', 
+                display: 'flex', 
+                flexDirection: 'column', 
+                justifyContent: 'space-between', 
+                overflow: 'hidden', 
             }}
         >
             <div style={{ display: 'flex', flexDirection: 'column', gap: '35px' }}>
@@ -50,7 +50,7 @@ function SecondLeftHeader() {
                 </div>
             </div>
 
-            {/* Help Typography at the bottom left with Icon in column format */}
+            
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 'auto' }}>
                 <HelpOutlineSharpIcon />
                 <Typography 
