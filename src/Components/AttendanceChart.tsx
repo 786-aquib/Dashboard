@@ -6,10 +6,10 @@ import 'chart.js/auto';
 Chart.register(...registerables);
 
 interface AttendanceChartProps {
-  onTime: any;
-  workFromHome: any;
-  lateAttendance: any;
-  absent: any;
+  onTime: number;
+  workFromHome: number;
+  lateAttendance: number;
+  absent: number;
 }
 
 const AttendanceChart: React.FC<AttendanceChartProps> = ({ onTime, workFromHome, lateAttendance, absent }) => {
@@ -20,14 +20,14 @@ const AttendanceChart: React.FC<AttendanceChartProps> = ({ onTime, workFromHome,
     datasets: [
       {
         data: [onTime, workFromHome, lateAttendance, absent],
-        backgroundColor: ['#28a745', '#ffc107', '#dc3545', 'white'],
-        hoverBackgroundColor: ['#218838', '#e0a800', '#c82333', 'white'],
+        backgroundColor: ['#28a745', '#ffc107', '#dc3545', '#cad5db'],
+        hoverBackgroundColor: ['#218838', '#e0a800', '#c82333', '#cad5db'],
       },
     ],
   };
 
   return (
-    <div style={{ width: 160, height: 160, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <div style={{ position: 'relative', width: 160, height: 160 }}>
       <Doughnut
         data={data}
         options={{
@@ -51,8 +51,15 @@ const AttendanceChart: React.FC<AttendanceChartProps> = ({ onTime, workFromHome,
           },
         }}
       />
-      <div style={{ textAlign: 'center', marginTop: 10 }}>
-        <strong>{total - absent}</strong>
+      <div style={{
+        position: 'absolute',
+        bottom: '57px',
+        left: '50%',
+        transform: 'translateX(-50%)',
+        textAlign: 'center',
+        marginTop: 5
+      }}>
+        <span style={{ fontSize: '1.5rem', fontFamily:'sans-serif'}}>{total - absent}</span>
         <br />/1500
       </div>
     </div>

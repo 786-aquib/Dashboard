@@ -33,12 +33,21 @@ export const employeeData: Employee[] = [
         employeeName: "Your Name",
         attendanceRecords: [
             {
+                date: "2024-09-22",
+                day: "Monday",
+                workMode: "In Office",
+                arrivalTime: "10:00 AM",
+                leavingTime: "06:00 PM",
+                effectiveTime: 16
+            },
+            
+            {
                 date: "2024-09-23",
                 day: "Monday",
                 workMode: "In Office",
                 arrivalTime: "10:00 AM",
                 leavingTime: "06:00 PM",
-                effectiveTime: 8
+                effectiveTime: 16
             },
             {
                 date: "2024-09-24",
@@ -61,7 +70,7 @@ export const employeeData: Employee[] = [
         summary: {
             totalOnTime: 1030,
             totalWFH: 191,
-            totalLate: 212,
+            totalLate: 300,
             totalAbsent: 66,
             averageCheckIn: "10:30 AM",
             averageCheckOut: "05:30 PM",
@@ -73,6 +82,14 @@ export const employeeData: Employee[] = [
                 employeeId: 2,
                 employeeName: "Bob Smith",
                 attendanceRecords: [
+                    {
+                        date: "2024-09-22",
+                        day: "Monday",
+                        workMode: "In Office",
+                        arrivalTime: "10:00 AM",
+                        leavingTime: "06:00 PM",
+                        effectiveTime: 16
+                    },
                     {
                         date: "2024-09-23",
                         day: "Monday",
@@ -105,6 +122,14 @@ export const employeeData: Employee[] = [
                 employeeName: "Alice Johnson",
                 attendanceRecords: [
                     {
+                        date: "2024-09-22",
+                        day: "Monday",
+                        workMode: "In Office",
+                        arrivalTime: "10:00 AM",
+                        leavingTime: "06:00 PM",
+                        effectiveTime: 16
+                    },
+                    {
                         date: "2024-09-23",
                         day: "Monday",
                         workMode: "In Office",
@@ -131,10 +156,19 @@ export const employeeData: Employee[] = [
                 ],
                 isAttendanceMarked: true,
             },
+            
             {
                 employeeId: 4,
                 employeeName: "Charlie Brown",
                 attendanceRecords: [
+                    {
+                        date: "2024-09-22",
+                        day: "Monday",
+                        workMode: "In Office",
+                        arrivalTime: "10:00 AM",
+                        leavingTime: "06:00 PM",
+                        effectiveTime: 16
+                    },
                     {
                         date: "2024-09-23",
                         day: "Monday",
@@ -163,5 +197,5 @@ export const employeeData: Employee[] = [
                 isAttendanceMarked: true, 
             }
         ]
-    }
+    },
 ];
