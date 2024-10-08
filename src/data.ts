@@ -70,7 +70,7 @@ export const employeeData: Employee[] = [
         summary: {
             totalOnTime: 1030,
             totalWFH: 191,
-            totalLate: 300,
+            totalLate: 30,
             totalAbsent: 66,
             averageCheckIn: "10:30 AM",
             averageCheckOut: "05:30 PM",

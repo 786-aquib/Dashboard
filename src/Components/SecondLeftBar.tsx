@@ -48,10 +48,7 @@ function SecondLeftHeader() {
                     <MessageSharpIcon />
                     <Typography sx={{ fontFamily: 'sans-serif', fontWeight: 500, fontSize: '0.675rem' }} variant='body2'>Messages</Typography>
                 </div>
-            </div>
-
-            
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: 'auto' }}>
+                {/* <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 10 }}>
                 <HelpOutlineSharpIcon />
                 <Typography 
                     sx={{ 
@@ -59,9 +56,11 @@ function SecondLeftHeader() {
                         fontWeight: 500, 
                         fontSize: '0.675rem', 
                     }} 
-                >
+                    variant = "body2"
+                > 
                     Help
                 </Typography>
+            </div> */}
             </div>
         </Box>
     );

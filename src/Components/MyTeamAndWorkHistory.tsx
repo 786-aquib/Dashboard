@@ -56,7 +56,7 @@ function MyteamAndWorkHistory() {
                                                 </th>
                                                 {currentEmployee.attendanceRecords.map((record, index) => (
                                                     <th key={index} style={{ padding: '12px', textAlign: 'center' }}>
-                                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', fontFamily: 'inherit' }}>
                                                             {record.date} <UnfoldMoreIcon sx={{ marginLeft: '8px' }} fontSize="inherit" />
                                                         </div>
                                                     </th>

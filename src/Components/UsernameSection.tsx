@@ -1,5 +1,7 @@
 import React from 'react';
-import { Box, Typography, Grid } from '@mui/material';
+import { Box, Typography } from '@mui/material';
+import  Grid  from '@mui/material/Grid2';
+
 import AccessTimeSharpIcon from '@mui/icons-material/AccessTimeSharp';
 
 function UsernameSection() {
@@ -10,7 +12,7 @@ function UsernameSection() {
     return (
         <Box sx={{ padding: 2, width: '100%', display: 'flex', flexDirection: 'column' }}>
             <Grid container spacing={2} sx={{ width: '100%' }}>
-                <Grid item xs={12} md={6}>
+                <Grid size = {{  xs:12, md:6 }}>
                     <Box sx={{ width: '100%' }}>
                         <Typography variant="h5" fontWeight='bold'>Good afternoon, Aquib!</Typography>
                         <Typography variant="body2" sx={{ marginTop: 1, fontFamily: 'serif' }}>
@@ -19,7 +21,7 @@ function UsernameSection() {
                     </Box>
                 </Grid>
 
-                <Grid item xs={12} md={6} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+                <Grid size = {{xs:12, md:6 }} sx={{ display: 'flex', justifyContent: 'flex-end' }}>
                     <Box 
                         sx={{
                             display: 'flex',

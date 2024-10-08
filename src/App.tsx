@@ -11,7 +11,7 @@ const App: React.FC = () => {
     <div style={{ backgroundColor: 'whitesmoke', overflowY: 'auto', height: '100vh', overflowX:'hidden' }}>
       <div style={{ display: 'flex', flexDirection: 'column', height: '100%' , overflowX:'hidden'}}>
         <TopHeader />
-        <div style={{ display: 'flex', flex: 1 }}>
+        <div style={{ display: 'flex', flex: 1, overflowY:'hidden' }}>
           <SecondLeftHeader />
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column' , overflowX:'hidden'}}>
             <UsernameSection />
