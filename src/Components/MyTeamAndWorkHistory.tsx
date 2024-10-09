@@ -27,7 +27,9 @@ function MyteamAndWorkHistory() {
                 {/* My Team Card */}
                 <Grid size = {{xs:12, md:6}} >
                     <Item>
-                        <Card>
+                        <Card 
+                           sx={{borderRadius: 4}}
+                        >
                             <CardContent sx={{ padding: 2, display: 'flex', flexDirection: 'column', height: '370px' }}>
                                 <Typography sx={{ fontWeight: 'bold', fontFamily: 'monospace', marginBottom: 2, display:'flex', justifyContent: 'start' }}>
                                     My Team
@@ -112,7 +114,9 @@ function MyteamAndWorkHistory() {
                 {/* Working History Card */}
                 <Grid size = {{  xs:12, md:6 }}>
     <Item>
-        <Card>
+        <Card
+            sx={{borderRadius: 4}}
+        >
             <CardContent sx={{ padding: 2, display: 'flex', flexDirection: 'column', height: '370px' }}>
                 <Typography sx={{ fontWeight: 'bold', fontFamily: 'monospace', marginBottom: 2, display: 'flex', justifyContent: 'start' }}>
                     Working History
@@ -136,9 +140,9 @@ function MyteamAndWorkHistory() {
                     <table style={{ borderCollapse: 'collapse', width: '100%' }}>
                         <thead style={{ backgroundColor: 'whitesmoke' }}>
                             <tr>
-                                <th style={{ padding: '12px', textAlign: 'center' }}>
+                                <th style={{ padding: '12px', textAlign: 'center', marginLeft: '3px' }}>
                                     <div style={{ display: 'flex', alignItems: 'left', justifyContent: 'left' }}>
-                                        Date <UnfoldMoreIcon sx={{ marginLeft: '8px' }} fontSize="inherit" />
+                                        Date <UnfoldMoreIcon sx={{ marginLeft: '8px', marginTop: '4px' }} fontSize="inherit" />
                                     </div>
                                 </th>
                                 <th style={{ padding: '12px', textAlign: 'center' }}>
@@ -173,14 +177,17 @@ function MyteamAndWorkHistory() {
 
                                 return (
                                     <tr key={index}>
-                                        <td style={{ padding: '12px', textAlign: 'center', display: 'flex', alignItems: 'start', justifyContent: 'start' }}>
-                                            <Avatar sx={{ width: 24, height: 24, marginRight: 2 }}>
-                                                <Typography variant="caption" sx={{ fontSize: '0.75rem' }}>
-                                                    {index === 0 ? 'T' : record.day.split('/')[0]}
-                                                </Typography>
-                                            </Avatar>
-                                            <span>{record.date}</span>
-                                        </td>
+                                        <td style={{ padding: '12px', textAlign: 'center', display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+    <Avatar sx={{ width: 24, height: 24, marginBottom: 1, marginTop: '7px', marginRight: '4px'}}>
+        <Typography variant="caption" sx={{ fontSize: '0.75rem'}}>
+            {new Date(record.date).getDate()}
+        </Typography>
+    </Avatar>
+    <span 
+      style={{ paddingLeft: '2px'}}
+    >{record.date}</span>
+</td>
+
                                         <td style={{ padding: '12px', textAlign: 'center', fontFamily: 'monospace' }}>
                                             {record.arrivalTime || 'N/A'} 
                                         </td>
@@ -221,7 +228,7 @@ function MyteamAndWorkHistory() {
                                                     {record.effectiveTime > 9 && (
                                                         <CircularProgress
                                                             variant="determinate"
-                                                            value={Math.min(100, ((record.effectiveTime - 9) / (24 - 9)) * 100)}
+                                                            value={Math.min(100, ((record.effectiveTime - 9) / (18 - 9)) * 100)}
                                                             size={14}
                                                             sx={{
                                                                 color: 'orange',
