@@ -31,7 +31,7 @@ function UsernameSection() {
                             boxShadow: '0 1px 1px rgba(0,0,0,0.2)',
                             borderRadius: 2,
                             padding: 1,
-                            marginRight: "32px",
+                            marginRight: "37px",
                             width: 'max-content',
                         }}
                     >   
