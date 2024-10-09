@@ -131,7 +131,7 @@ const ThreeCardSection = () => {
                 </Grid>
 
                 {/* Attendance Summary Card */}
-                <Grid size = {{xs:12, sm:6, md:4}} container justifyContent={{ xs: 'center', md: 'flex-start' }} display={{ xs: 'flex', md: 'block' }}>
+                <Grid size = {{xs:12, sm:6, md:4}} >
                     <Card sx={{ height: '100%', borderRadius: 3, overflow: 'hidden' }}>
                         <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
                             <div style={{ display: 'flex', justifyContent: 'space-between' }}>

@@ -85,10 +85,11 @@ function MyteamAndWorkHistory() {
                                                                             height: 8,
                                                                             borderRadius: '50%',
                                                                             backgroundColor:
-                                                                                record.workMode === "Remote" ? 'blue' :
-                                                                                record.workMode === "Absent" ? 'red' :
+                                                                                record.workMode === "Remote" ? 'yellow' :
+                                                                                record.workMode === "Absent" ? 'grey' :
                                                                                 record.workMode === "In Office" ? 'green' :
-                                                                                'gray', // Default color for unknown workMode
+                                                                                record.workMode === "Absent" ? "white":
+                                                                                'blue', // Default color for unknown workMode
                                                                             display: 'inline-block',
                                                                             marginRight: 4
                                                                         }}
