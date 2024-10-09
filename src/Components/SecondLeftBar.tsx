@@ -11,16 +11,16 @@ import HelpOutlineSharpIcon from '@mui/icons-material/HelpOutlineSharp';
 function SecondLeftHeader() {
     return (
         <Box
-            style={{
+            sx={{
                 backgroundColor: 'white',
-                padding: 10,
+                padding: 2,
                 boxShadow: '0 1px 1px rgba(0,0,0,0.2)',
-                width: 'max-content', 
-                height: '100vh', 
-                display: 'flex', 
-                flexDirection: 'column', 
-                justifyContent: 'space-between', 
-                overflow: 'hidden', 
+                width: 'max-content',
+                height: '100vh',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'space-between',
+                overflowY: 'auto', // Allow vertical scrolling if needed
             }}
         >
             <div style={{ display: 'flex', flexDirection: 'column', gap: '35px' }}>
@@ -48,20 +48,24 @@ function SecondLeftHeader() {
                     <MessageSharpIcon />
                     <Typography sx={{ fontFamily: 'sans-serif', fontWeight: 500, fontSize: '0.675rem' }} variant='body2'>Messages</Typography>
                 </div>
-                {/* <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginBottom: 10 }}>
+
+                {/* <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '300px', marginBottom: 'auto' }}>
                 <HelpOutlineSharpIcon />
-                <Typography 
-                    sx={{ 
-                        fontFamily: 'sans-serif', 
-                        fontWeight: 500, 
-                        fontSize: '0.675rem', 
-                    }} 
-                    variant = "body2"
-                > 
+                <Typography
+                    sx={{
+                        fontFamily: 'sans-serif',
+                        fontWeight: 500,
+                        fontSize: '0.675rem',
+                    }}
+                    variant="body2"
+                >
                     Help
                 </Typography>
             </div> */}
             </div>
+
+            {/* Help section at the bottom, always visible */}
+            
         </Box>
     );
 }

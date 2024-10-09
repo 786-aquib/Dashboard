@@ -1,5 +1,7 @@
 import React from "react";
-import { Typography, TextField, IconButton, Grid, Box } from "@mui/material";
+import { Typography, TextField, IconButton, Box } from "@mui/material";
+import Grid from "@mui/material/Grid2";
+
 import SearchIcon from '@mui/icons-material/Search';
 import EmailSharpIcon from '@mui/icons-material/EmailSharp';
 import NotificationAddSharpIcon from '@mui/icons-material/NotificationAddSharp';
@@ -11,12 +13,12 @@ function TopHeader() {
         <Box sx={{ padding: 2, backgroundColor: 'white', boxShadow: '0 1px 1px rgba(0,0,0,0.2)' }}>
             <Grid container justifyContent="space-between" alignItems="center">
                
-                <Grid item>
+                <Grid >
                     <LeftHeader />
                 </Grid>
 
                 
-                <Grid item>
+                <Grid >
                     <div style={{ display: 'flex', alignItems: 'center', gap: '30px', marginRight: 2 }}>
                         <TextField
                             sx={{

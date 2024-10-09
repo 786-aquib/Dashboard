@@ -54,7 +54,7 @@ const ThreeCardSection = () => {
                                     {myData.isAttendanceMarked ? 'Present' : 'Absent'}
                                 </Typography>
                             </div>
-                            <Box sx={{ height: '1px', backgroundColor: 'gray', margin: '5px 0' }} />
+                            <Box sx={{ height: '1px', backgroundColor: 'gray', marginTop:'25px' }} />
                             <Box display="flex" justifyContent="space-between" sx={{ marginTop: '25px' }}>
                                 <Box>
                                     <FingerprintSharpIcon fontSize='large' color='success' />
@@ -142,7 +142,7 @@ const ThreeCardSection = () => {
                                     View Stats
                                 </Button>
                             </div>
-                            <Box sx={{ height: '1px', backgroundColor: 'gray', margin: '5px 0' }} />
+                            <Box sx={{ height: '1px', backgroundColor: 'gray', marginTop:'-16px' }} />
                             <Box display="flex" flexDirection={{ xs: 'column', md: 'row' }} justifyContent="space-between" sx={{ gap: 2 }}>
                                 <Box sx={{ flex: 1, marginBottom: { xs: 2, md: 0 } }}>
                                     {[
@@ -153,7 +153,7 @@ const ThreeCardSection = () => {
                                     ].map(({ color, label, value }, index) => (
                                         <div key={index} style={{ display: 'flex', alignItems: 'center', marginTop: 10 }}>
                                             <div style={{ width: 10, height: 10, borderRadius: '50%', backgroundColor: color, marginRight: 8 }} />
-                                            <span>{value} {label}</span>
+                                            <span style={{fontFamily:'inherit'}}>{value} {label}</span>
                                         </div>
                                     ))}
                                 </Box>
