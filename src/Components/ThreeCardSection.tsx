@@ -81,55 +81,54 @@ const ThreeCardSection = () => {
                 </Grid>
 
                 {/* Average Stats Card */}
-                <Grid size = {{xs:12, sm:6, md:4}}>
-    <Card sx={{ height: '100%', borderRadius: 3, overflow: 'hidden' }}>
-        <CardContent sx={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between', height: '100%' }}>
-            <Box display="flex" flexDirection="column" sx={{ height: '100%' }}>
-                <Box display="flex" justifyContent="space-between" gap={2}>
-                    <Card sx={{ flex: '1', borderRadius: 3, margin: 0.5 }}> {/* Added margin for spacing */}
-                        <CardContent>
-                            <HistoryToggleOffIcon fontSize='large' color='success' />
-                            <Typography sx={{ marginTop: 1 }} fontSize="0.85rem">Average hours</Typography>
-                            <Typography sx={{ marginTop: 1 }} fontSize="1.3rem" fontWeight="bold">
-                                {myData.summary?.averageHours} hours
-                            </Typography>
-                        </CardContent>
-                    </Card>
-                    <Card sx={{ flex: '1', borderRadius: 3, margin: 0.5 }}> {/* Added margin for spacing */}
-                        <CardContent>
+                <Grid container size = {{ xs: 12, sm: 6, md: 4}} spacing={2}>
+                    {/* 2x2 grid for average stats cards */}
+                    <Grid size = {{ xs: 6}}>
+                        <Card sx={{ height: '100%', borderRadius: 3, overflow: 'hidden' }}>
+                            <CardContent sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                             <ArrowForwardIcon fontSize='large' color='success' />
                             <Typography sx={{ marginTop: 1 }} fontSize="0.85rem">Average Check-in</Typography>
                             <Typography sx={{ marginTop: 1 }} fontSize="1.3rem" fontWeight="bold">
                                 {myData.summary?.averageCheckIn}
                             </Typography>
-                        </CardContent>
-                    </Card>
-                </Box>
-                <Box display="flex" justifyContent="space-between" gap={2} sx={{ marginTop: 1 }}>
-                    <Card sx={{ flex: '1', borderRadius: 3, margin: 0.5 }}> {/* Added margin for spacing */}
-                        <CardContent>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid size = {{ xs: 6}}>
+                        <Card sx={{ height: '100%', borderRadius: 3, overflow: 'hidden' }}>
+                            <CardContent sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                            <HistoryToggleOffIcon fontSize='large' color='success' />
+                            <Typography sx={{ marginTop: 1 }} fontSize="0.85rem">Average hours</Typography>
+                            <Typography sx={{ marginTop: 1 }} fontSize="1.3rem" fontWeight="bold">
+                                {myData.summary?.averageHours} hours
+                            </Typography>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid size = {{ xs: 6}}>
+                        <Card sx={{ height: '100%', borderRadius: 3, overflow: 'hidden' }}>
+                            <CardContent sx={{ display: 'flex', flexDirection: 'column',  height: '100%' }}>
                             <AccessTimeIcon fontSize='large' color='success' />
                             <Typography sx={{ marginTop: 1 }} fontSize="0.85rem">On time Arrival</Typography>
                             <Typography sx={{ marginTop: 1 }} fontSize="1.3rem" fontWeight="bold">
                                 {myData.summary?.onTimeInterval}
                             </Typography>
-                        </CardContent>
-                    </Card>
-                    <Card sx={{ flex: '1', borderRadius: 3, margin: 0.5 }}> {/* Added margin for spacing */}
-                        <CardContent>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid size = {{ xs: 6}}>
+                        <Card sx={{ height: '100%', borderRadius: 3, overflow: 'hidden' }}>
+                            <CardContent sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                             <SwipeRightAltIcon fontSize='large' color='error' />
                             <Typography sx={{ marginTop: 1 }} fontSize="0.85rem">Average Check-out</Typography>
                             <Typography sx={{ marginTop: 1 }} fontSize="1.3rem" fontWeight="bold">
                                 {myData.summary?.averageCheckOut}
                             </Typography>
-                        </CardContent>
-                    </Card>
-                </Box>
-            </Box>
-        </CardContent>
-    </Card>
-</Grid>
 
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                </Grid>
 
                 {/* Attendance Summary Card */}
                 <Grid size = {{xs:12, sm:6, md:4}} container justifyContent={{ xs: 'center', md: 'flex-start' }} display={{ xs: 'flex', md: 'block' }}>

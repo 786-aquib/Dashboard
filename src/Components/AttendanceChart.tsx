@@ -60,7 +60,7 @@ const AttendanceChart: React.FC<AttendanceChartProps> = ({ onTime, workFromHome,
         marginTop: 5
       }}>
         <span style={{ fontSize: '1.5rem', fontFamily:'sans-serif'}}>{total - absent}</span>
-        <br />/1500
+        <br />/{total}
       </div>
     </div>
   );
