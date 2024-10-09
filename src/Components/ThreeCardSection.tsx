@@ -82,7 +82,6 @@ const ThreeCardSection = () => {
 
                 {/* Average Stats Card */}
                 <Grid container size = {{ xs: 12, sm: 6, md: 4}} spacing={2}>
-                    {/* 2x2 grid for average stats cards */}
                     <Grid size = {{ xs: 6}}>
                         <Card sx={{ height: '100%', borderRadius: 3, overflow: 'hidden' }}>
                             <CardContent sx={{ display: 'flex', flexDirection: 'column', height: '100%' }}>

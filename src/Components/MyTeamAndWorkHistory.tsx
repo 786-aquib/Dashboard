@@ -7,14 +7,13 @@ import UnfoldMoreIcon from '@mui/icons-material/UnfoldMore';
 import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 import { employeeData } from '../data';
 
-// Adjusting the styled component to remove default shadow and background color
 const Item = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'center',
     color: theme.palette.text.secondary,
-    boxShadow: 'none', // Remove the default shadow
-    backgroundColor: 'transparent', // Set background color to transparent
+    boxShadow: 'none',
+    backgroundColor: 'transparent',
 }));
 
 function MyteamAndWorkHistory() {
@@ -91,7 +90,7 @@ function MyteamAndWorkHistory() {
                                                                                 record.workMode === "Absent" ? 'grey' :
                                                                                 record.workMode === "In Office" ? 'green' :
                                                                                 record.workMode === "Absent" ? "white":
-                                                                                'blue', // Default color for unknown workMode
+                                                                                'blue', 
                                                                             display: 'inline-block',
                                                                             marginRight: 4
                                                                         }}
@@ -111,7 +110,6 @@ function MyteamAndWorkHistory() {
                     </Item>
                 </Grid>
 
-                {/* Working History Card */}
                 <Grid size = {{  xs:12, md:6 }}>
     <Item>
         <Card

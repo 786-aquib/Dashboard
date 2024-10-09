@@ -13,7 +13,7 @@ interface AttendanceChartProps {
 }
 
 const AttendanceChart: React.FC<AttendanceChartProps> = ({ onTime, workFromHome, lateAttendance, absent }) => {
-  const total = onTime + workFromHome + lateAttendance + absent || 1; // Prevent division by zero
+  const total = onTime + workFromHome + lateAttendance + absent || 1;
 
   const data = {
     labels: ['On Time', 'Work from Home', 'Late Attendance', 'Absent'],
