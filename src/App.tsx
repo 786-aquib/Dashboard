@@ -16,7 +16,7 @@ const App: React.FC = () => {
           <div style={{ flex: 1, display: 'flex', flexDirection: 'column' , overflowX:'hidden'}}>
             <UsernameSection />
             <div style={{ flex: 1, display: 'flex', flexDirection: 'column', }}>
-              <div style={{ marginBottom: '-32px', marginTop:'-16px' }}>
+              <div style={{ marginBottom: '-32px', marginTop:'-8px' }}>
                 <ThreeCardSection />
               </div>
               <div style={{ marginLeft: '10px', marginRight: '10px', marginTop: 'auto' }}>

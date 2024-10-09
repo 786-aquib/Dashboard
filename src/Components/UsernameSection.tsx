@@ -10,7 +10,7 @@ function UsernameSection() {
     const formattedTime = currentDate.toLocaleTimeString();
 
     return (
-        <Box sx={{ padding: 2, width: '100%', display: 'flex', flexDirection: 'column' }}>
+        <Box sx={{ padding: "20px", width: '100%', display: 'flex', flexDirection: 'column' }}>
             <Grid container spacing={2} sx={{ width: '100%' }}>
                 <Grid size = {{  xs:12, md:6 }}>
                     <Box sx={{ width: '100%' }}>

@@ -10,7 +10,7 @@ import LeftHeader from "./LeftHeader";
 
 function TopHeader() {
     return (
-        <Box sx={{ padding: 2, backgroundColor: 'white', boxShadow: '0 1px 1px rgba(0,0,0,0.2)' }}>
+        <Box sx={{ padding: '7px', backgroundColor: 'white', boxShadow: '0 1px 1px rgba(0,0,0,0.2)' }}>
             <Grid container justifyContent="space-between" alignItems="center">
                
                 <Grid >
