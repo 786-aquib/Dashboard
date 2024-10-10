@@ -19,7 +19,7 @@ function TopHeader() {
 
                 
                 <Grid >
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '30px', marginRight: 2 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '22px', marginRight: 2 }}>
                         <TextField
                             sx={{
                                 "& .MuiOutlinedInput-root": {

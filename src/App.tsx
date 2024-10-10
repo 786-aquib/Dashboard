@@ -19,7 +19,7 @@ const App: React.FC = () => {
               <div style={{ marginBottom: '-32px', marginTop:'-8px' }}>
                 <ThreeCardSection />
               </div>
-              <div style={{ marginLeft: '10px', marginRight: '10px', marginTop: 'auto' }}>
+              <div style={{ marginLeft: '10px', marginRight: '10px' }}>
                 <MyteamAndWorkHistory />
               </div>
             </div>

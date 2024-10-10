@@ -27,12 +27,12 @@ const AttendanceChart: React.FC<AttendanceChartProps> = ({ onTime, workFromHome,
   };
 
   return (
-    <div style={{ position: 'relative', width: 160, height: 160 }}>
+    <div style={{ position: 'relative', width: '100%', height: 'auto', maxWidth: 150, maxHeight: 150 }}>
       <Doughnut
         data={data}
         options={{
           responsive: true,
-          maintainAspectRatio: false,
+          maintainAspectRatio: true,
           cutout: '80%',
           plugins: {
             legend: {
@@ -53,13 +53,12 @@ const AttendanceChart: React.FC<AttendanceChartProps> = ({ onTime, workFromHome,
       />
       <div style={{
         position: 'absolute',
-        bottom: '57px',
+        bottom: '32%',
         left: '50%',
         transform: 'translateX(-50%)',
         textAlign: 'center',
-        marginTop: 5
       }}>
-        <span style={{ fontSize: '1.5rem', fontFamily:'sans-serif'}}>{total - absent}</span>
+        <span style={{ fontSize: '1.5rem', fontFamily: 'sans-serif' }}>{total - absent}</span>
         <br />/{total}
       </div>
     </div>
